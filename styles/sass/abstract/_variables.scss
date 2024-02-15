@@ -1,0 +1,232 @@
+//font specific
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../-/media/Themes/Gilead/GileadCorporate/GileadCorporate/fonts/proxima/ProximaNova-Regular.eot');
+    src: url('../-/media/Themes/Gilead/GileadCorporate/GileadCorporate/fonts/proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../-/media/Themes/Gilead/GileadCorporate/GileadCorporate/fonts/proxima/ProximaNova-Regular.woff2') format('woff2'),
+        url('../-/media/Themes/Gilead/GileadCorporate/GileadCorporate/fonts/proxima/ProximaNova-Regular.woff') format('woff'),
+        url('../-/media/Themes/Gilead/GileadCorporate/GileadCorporate/fonts/proxima/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+$base-font:                         'Proxima Nova', sans-serif !default;
+$base-font-size:                    1rem !default;
+$base-line-height:                  1.428571429rem !default;
+
+//body bg colors
+$body-bg-color:                   #ffffff !default;
+$body-color:                      #000000 !default;
+//theme primary colors
+$primary-gilead-red:              #c5203f !default; 
+$primary-blue:                   #203662;
+$primary-black:                   #1e1e1e !default;
+$primary-cool-grey:               #54565b !default;
+$primary-stone-grey:              #c6cac6 !default;
+$primary-gilead-red-lightest:     #c5203f !default;
+$primary-gilead-red-light:        #1e1e1e !default;
+$primary-gilead-red-dark:        #54565b !default;
+$primary-gilead-red-darkest:     #c6cac6 !default;
+$primary-stone-grey-lightest:     #F4F5F4 !default;
+$primary-stone-grey-light:       #DDDFDD !default;
+$primary-stone-grey-dark:       #929A92 !default;
+$primary-stone-grey-Darkest:     #606860 !default;
+
+//theme secondary colors
+$secondary-twilight-sky:         #3c587f !default;
+$secondary-eggshell-blue:        #8dc1c5 !default;
+$secondary-kite-blue:            #0064a8 !default;
+$secondary-forest-green:         #688c38 !default;
+$secondary-leaf-green:           #aeb618 !default;
+$secondary-sun:                  #ffc000 !default;
+
+//theme nuetral colors
+$nuetral-grey-800:              #222222 !default;
+$nuetral-grey-700:              #464646 !default;
+$nuetral-grey-600:              #6d6d6d !default;
+$nuetral-grey-500:              #909090 !default;
+$nuetral-grey-400:              #b1b1b1 !default;
+$nuetral-grey-300:              #d5d5d5 !default;
+$nuetral-grey-200:              #e6e6e6 !default;
+$nuetral-grey-100:              #f8f8f8 !default;
+
+// theme gradient colors [ call in css .selector{@include sunrise-gradient;} ]
+@mixin sunrise-linear-gradient($start-color: #C51F3F, $end-color: #FF8514, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+  @mixin dawn-sky-linear-gradient($start-color: #2F5197, $end-color: #E85121, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+  //it may be removed
+  @mixin twilight-sky-linear-gradient($start-color: #3FB9C2, $end-color: #2F4E8C, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+  //it may be removed
+  @mixin forest-green-linear-gradient($start-color: #76C868, $end-color: #C2D354, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+  @mixin oncology-linear-gradient($start-color: #F8E0D4, $end-color: #FEF9F6, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+  @mixin virology-linear-gradient($start-color: #E6E1F3, $end-color: #F8F5FF, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+  @mixin inflammation-linear-gradient($start-color: #D3EAF4, $end-color: #F1FAFE, $deg: 45deg) {
+    background-image: -webkit-linear-gradient($deg, $start-color, $end-color); 
+    background-image: -o-linear-gradient($deg, $start-color, $end-color); 
+    background-image: linear-gradient($deg, $start-color, $end-color); 
+    background-repeat: repeat-x;
+  }
+
+// theme data visualization colors
+$data-vis-1:   #0FB5AE !default;
+$data-vis-2:   #4046CA !default;
+$data-vis-3:   #F68511 !default;
+$data-vis-4:   #DE3D82 !default;
+$data-vis-5:   #7E84FA !default;
+$data-vis-6:   #72E06A !default;
+
+//theme supporting bg colors
+$supporting-bg-color-oncology:   #FDE9DE !default;
+$supporting-bg-color-virology:   #D3EEFA !default;
+$supporting-bg-color-inflammation:   #E7E4FC !default;
+$supporting-bg-color-footer:   #E2EAF4 !default;
+$supporting-bg-color-background-one:   #E2EAF4 !default;
+
+//theme tint & shade colors
+$ts-oncology-lightest:              #FEF6F2;
+$ts-oncology-light:              #F4A881;
+$ts-oncology-dark:              #E18455;
+$ts-oncology-Darkest:              #CB7042;
+
+$ts-virology-lightest:              #EDF8FD;
+$ts-virology-light:              #699ECF;
+$ts-virology-dark:              #3573AD;
+$ts-virology-Darkest:              #295988;
+
+$ts-inflammation-lightest:              #F5F4FE;
+$ts-inflammation-light:              #C0BAEB;
+$ts-inflammation-dark:              #9990DA;
+$ts-inflammation-Darkest:              #3886A8;
+
+  
+// theme titles
+ @mixin d1-font {
+     font-size: 6.5rem;
+     line-height: 6.5rem;
+     letter-spacing: -3%;
+  }
+  @mixin d2-font {
+     font-size: 5.188rem;
+     line-height: 5.188rem;
+     letter-spacing: -3%;
+  }
+  @mixin d3-font {
+     font-size: 3.125rem;
+     line-height: 3.125rem;
+     letter-spacing: -3%;
+     font-weight: bold;
+  }
+
+  @mixin h1-font {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -3%;
+ }
+
+ @mixin h2-font {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -3%;
+    font-weight: bold;
+ }
+
+ @mixin h3-font {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+ }
+
+ @mixin s1-font {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+ }
+
+ @mixin s2-font {
+    font-size: 1.37rem;
+    line-height: 1.87rem;
+ }
+
+ @mixin s2-bold {
+    font-size: 1.37rem;
+    line-height: 1.87rem;
+    font-weight: bold;
+ }
+
+ @mixin s3-font {
+    font-size: 1.37rem;
+    line-height: 1.87rem;
+    font-weight: bold;
+ }
+
+ @mixin s4-font {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+ }
+
+// global button variables
+// Primary buttons
+ $g-btn-primary: $primary-gilead-red;
+ $g-btn-primary-hover:#881222; 
+ $g-btn-primary-focus:#5B0C16;
+ $g-btn-primary-focus-visible:#C5203F;
+ $g-btn-primary-disables:#E6E6E6;
+
+// secondary buttons
+ $g-btn-primary: $primary-gilead-red;
+ $g-btn-primary-hover:#881222; 
+ $g-btn-primary-focus:#5B0C16;
+ $g-btn-primary-focus-visible:#C5203F;
+ $g-btn-primary-disables:#E6E6E6;
+
+
+ /* Normal desktop :1200px. */
+$large_device:'only screen and (min-width: 1200px) and (max-width: 1500px)';
+/* small mobile :320px. */
+$mobile_device:'(max-width: 767px)';
+/*
+/* Normal desktop :992px. 
+$mid_device:'(min-width: 992px) and (max-width: 1200px)';
+
+ Tablet desktop :768px. 
+$tablet_device:'(min-width: 768px) and (max-width: 991px)';
+
+Large Mobile :480px. 
+$large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
+*/
